@@ -30,7 +30,7 @@ function NavBar({ setData, cart }) {
 		<>
 			<header className="sticky-top">
 				<nav className="nav-bar">
-					<Link to={"/eCommerce-react-app"} className="brand">
+					<Link to={"/eCommerce-react"} className="brand">
 						<img src={Logo} alt="logo" width={30} />
 						eCommerce
 					</Link>
@@ -47,7 +47,7 @@ function NavBar({ setData, cart }) {
 							onClick={handleSubmit}
 						></i>
 					</form>
-					<Link to={"/eCommerce-react-app/cart"} className="cart">
+					<Link to={"/eCommerce-react/cart"} className="cart">
 						<button
 							type="button"
 							className="btn btn-primary position-relative"
@@ -62,7 +62,7 @@ function NavBar({ setData, cart }) {
 				</nav>
 
 				{/*FILER BY PRODUCT*/}
-				{location.pathname == "/eCommerce-react-app" && (
+				{location.pathname == "/eCommerce-react" && (
 					<div className="nav-wrapper">
 						<div className="filter">
 							<i className="fa-solid fa-filter"></i> Filter By

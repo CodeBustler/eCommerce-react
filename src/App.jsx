@@ -17,19 +17,19 @@ function App() {
         <NavBar cart={cart} setData={setData} />
         <Routes>
           <Route
-            path="/eCommerce-react-app"
+            path="/eCommerce-react"
             element={<Product cart={cart} setCart={setCart} items={data} />}
           />
           <Route
-            path="/eCommerce-react-app/product/:id"
+            path="/eCommerce-react/product/:id"
             element={<ProductDetail cart={cart} setCart={setCart} />}
           />
           <Route
-            path="/eCommerce-react-app/search/:term"
+            path="/eCommerce-react/search/:term"
             element={<SearchItem />}
           />
           <Route
-            path="/eCommerce-react-app/cart"
+            path="/eCommerce-react/cart"
             element={<Cart cart={cart} setCart={setCart} />}
           />
         </Routes>
