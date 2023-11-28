@@ -15,7 +15,7 @@ function Cart({ cart, setCart }) {
 						</div>
 						<button
 							className="btn btn-warning"
-							onClick={() => navigate("/eCommerce-react-app")}
+							onClick={() => navigate("/eCommerce-react")}
 						>
 							Return Home
 						</button>

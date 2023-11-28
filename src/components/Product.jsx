@@ -58,7 +58,7 @@ function Product({ items, cart, setCart }) {
 									style={{ width: "18rem" }}
 								>
 									<Link
-										to={`/eCommerce-react-app/product/${product.id}`}
+										to={`/eCommerce-react/product/${product.id}`}
 										onClick={window.scrollTo(0, 0)}
 									>
 										<img
