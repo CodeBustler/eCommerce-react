@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, serif;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #13192b;
+  color: white;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.search-bar {
+  padding-left: 20px;
+  width: 60vw;
+  border-radius: 5px;
+  font-size: large;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar input {
+  background-color: transparent;
+  width: calc(100% - 100px);
+  appearance: none;
+  border: none;
+  outline: none;
+}
+
+.search-bar i {
+  color: dimgrey;
+  font-size: larger;
+  cursor: pointer;
+  background-color: orange;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.nav-wrapper {
+  background-color: #232f3e;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.items {
+  border: 1px solid orange;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.pr {
+  border-color: gray;
+}
+
+.items:hover {
+  transform: translateY(-5px);
+}
+
+.items:active {
+  background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: 10px;
+}
+
+.product-item img {
+  width: 400px;
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 670px) {
+  .nav-bar {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 15px;
+  }
+
+  .search-bar {
+    padding-left: 20px;
+    width: 95vw;
+  }
+}
